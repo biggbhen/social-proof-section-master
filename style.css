@@ -33,7 +33,7 @@ body::after {
   right: 0%;
   bottom: 0%;
   /* border: 1px solid #511F50; */
-  background-position:right 0em bottom 0em;
+  background-position: right 0em bottom 0em;
   background-image: url("./images/bg-pattern-bottom-desktop.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -70,7 +70,7 @@ body::after {
 }
 h1 {
   font-size: clamp(1.9rem, 3vw, 2.6rem);
-  line-height:clamp(2.1rem, 3vh, 2.5rem);
+  line-height: clamp(2.1rem, 3vh, 2.5rem);
   color: #562455;
 }
 p {
@@ -119,8 +119,8 @@ p {
   border-radius: 0.5rem;
   background-color: #511f50;
 }
-.user1:hover{
- background-color:blueviolet;
+.social-proof > section:hover {
+  background-color: #51103a;
 }
 .social-proof .soc-box2 {
   margin-top: 3%;
@@ -163,6 +163,6 @@ p {
 .stats > p {
   color: #a86199;
 }
-.stars:hover{
- margin-left: 0;
+.stars:hover {
+  margin-left: 0;
 }
