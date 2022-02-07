@@ -16,24 +16,24 @@ body::before {
   content: "";
   position: absolute;
   width: 50%;
-  height: 60%;
+  height: 80%;
   /* border: 1px solid #511F50; */
   top: 0%;
   left: 0%;
   background-image: url("./images/bg-pattern-top-desktop.svg");
-  background-position: left -2.5em top -2em;
+  background-position: left -6em top -8em;
   background-size: cover;
   background-repeat: no-repeat;
 }
 body::after {
   content: "";
   position: absolute;
-  width: 65%;
-  height: 80%;
+  width: 80%;
+  height: 100%;
   right: 0%;
   bottom: 0%;
   /* border: 1px solid #511F50; */
-  background-position: right 0em bottom 0em;
+  background-position: right -8em bottom 0em;
   background-image: url("./images/bg-pattern-bottom-desktop.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -69,12 +69,12 @@ body::after {
   height: 100%;
 }
 h1 {
-  font-size: clamp(1.9rem, 3vw, 2.6rem);
-  line-height: clamp(2.1rem, 3vh, 2.5rem);
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+  line-height: clamp(2rem, 3vh, 2.5rem);
   color: #562455;
 }
 p {
-  font-size: clamp(6px, 11px, 12px);
+  font-size: clamp(6px,1.3vw, 12px);
   font-weight: 500;
   color: #b4aab5;
 }
@@ -165,4 +165,14 @@ p {
 }
 .stars:hover {
   margin-left: 0;
+}
+@media (max-width:1010px) {
+ body::after{
+  width: 100%;
+  background-position: right -11em bottom -2em;
+ }
+ body::before{
+  width:80% ;
+  background-position: left -11em top -7em;
+ }
 }
