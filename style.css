@@ -6,7 +6,7 @@
 }
 body {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,16 +39,18 @@ body::after {
   background-repeat: no-repeat;
 }
 #container {
-  width: clamp(850px, 80vw, 1245px);
-  height: 480px;
-  /* border: 2px solid blue; */
+  max-width: 910px;
+  width: 100%;
+  /* width: clamp(850px, 80vw, 1245px); */
+  /* height: 480px; */
+  border: 2px solid blue;
   padding: 50px;
   z-index: 4;
   box-shadow: 7px 8px 30px 10px rgba(0, 0, 0, 0.2);
 }
 .reviews,
 .social-proof {
-  /* border: 1px solid grey; */
+  border: 1px solid grey;
   height: 50%;
   display: flex;
 }
@@ -70,11 +72,11 @@ body::after {
 }
 h1 {
   font-size: clamp(1.6rem, 3vw, 2.6rem);
-  line-height: clamp(2rem, 3vh, 2.5rem);
+  line-height: clamp(2rem, 3vw, 2.5rem);
   color: #562455;
 }
 p {
-  font-size: clamp(6px,1.3vw, 12px);
+  font-size: clamp(6px, 1.3vw, 12px);
   font-weight: 500;
   color: #b4aab5;
 }
@@ -148,7 +150,7 @@ p {
   margin-top: 1.4%;
 }
 .stats > h2 {
-  font-size: clamp(10px, 1vw, 12px);
+  font-size: clamp(9px, 1vw, 12px);
   margin-bottom: 1.5%;
   color: white;
 }
@@ -166,13 +168,23 @@ p {
 .stars:hover {
   margin-left: 0;
 }
-@media (max-width:1010px) {
- body::after{
-  width: 100%;
-  background-position: right -11em bottom -2em;
- }
- body::before{
-  width:80% ;
-  background-position: left -11em top -7em;
- }
+@media (max-width: 1010px) {
+  body::after {
+    width: 100%;
+    background-position: right -11em bottom -2em;
+  }
+  body::before {
+    width: 80%;
+    background-position: left -11em top -7em;
+  }
+}
+@media (max-width: 700px) {
+  .reviews,
+  .social-proof {
+    display: flex;
+    flex-direction: column;
+  }
+  #container {
+    height: 100%;
+  }
 }
