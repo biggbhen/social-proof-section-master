@@ -6,22 +6,21 @@
 }
 body {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: white;
 }
 body::before {
   content: "";
   position: absolute;
-  width: 50%;
+  width: 60%;
   height: 80%;
   /* border: 1px solid #511F50; */
   top: 0%;
   left: 0%;
   background-image: url("./images/bg-pattern-top-desktop.svg");
-  background-position: left -6em top -8em;
+  background-position: left -9em top -4em;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -33,65 +32,62 @@ body::after {
   right: 0%;
   bottom: 0%;
   /* border: 1px solid #511F50; */
-  background-position: right -8em bottom 0em;
+  background-position: right -4em bottom -2em;
   background-image: url("./images/bg-pattern-bottom-desktop.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 #container {
   max-width: 59.375rem;
-  width: 80%;
+  width: 100%;
   height: 31rem;
-  border: 2px solid blue;
-  padding: 45px;
+  margin-top: 6.5rem;
+  /* border: 2px solid blue; */
+  padding:  3.125rem;
   z-index: 4;
   box-shadow: 7px 8px 30px 10px rgba(0, 0, 0, 0.2);
 }
 .reviews,
 .social-proof {
   border: 1px solid grey;
-  height: 50%;
   display: flex;
 }
-.ratings-2 {
-  /* padding-left: 1.5%; */
-}
+
 .ratings-1 {
   padding-right: 4%;
 }
 .ratings-1 p {
-  line-height: clamp(1rem, 2.4vh, 1.1rem );
+  line-height: clamp(1rem, 1vw, 1.1rem );
   padding-top: 1.2rem;
-  font-size: clamp(10px, 1vw, 12px);
+  font-size: clamp(11px, 1vw, 12px);
 }
 .ratings {
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   width: 50%;
 }
 h1 {
-  font-size: clamp(1.6rem, 3vw, 2.6rem);
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
   line-height: clamp(2rem, 2.8vw, 2.5rem);
   color: #562455;
 }
  p {
-  font-size: clamp(10px, 1vw, 12px);
+  font-size: clamp(9px, 1vw, 11px);
   font-weight: 500;
   color: #b4aab5;
  } 
 .stars {
   width: 82.5%;
-  height: 20%;
+  height: 22%;
   border-radius: 0.3125rem;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  
   padding-left: 4.5%;
   background-color: #f7f2f6;
   margin-top: 1rem;
 }
 .star-svg {
   width: clamp(3%, 0.9vw, 5%);
-  /* height: 29%; */
   margin:0 1%;
 }
 .stars span {
@@ -114,10 +110,10 @@ h1 {
 .social-proof > section {
   /* border: 1px solid green; */
   width: 32.5%;
-  height: 79%;
-  /* margin-top: 1.8%; */
-  padding: 1.3rem;
-  border-radius: 0.5rem;
+  height: 75%;
+  margin-top: 1.8%;
+  padding: 1rem;
+  border-radius: 0.4rem;
   background-color: #511f50;
 }
 .social-proof > section:hover {
@@ -149,12 +145,12 @@ h1 {
   margin-top: 1.4%;
 }
 .stats > h2 {
-  font-size: clamp(9px, 1vw, 12px);
-  margin-bottom: 1.5%;
+  font-size: clamp(9px, 1vw, 11px);
+  margin-bottom: 1.7%;
   color: white;
 }
 .feedback {
-  margin-top: 6%;
+  margin-top: 7%;
   line-height: 0.8rem;
 
   font-weight: 900;
@@ -167,7 +163,7 @@ h1 {
 .stars:hover {
   margin-left: 0;
 }
-@media (max-width: 1010px) {
+@media (max-width: 1320px) {
   body::after {
     width: 100%;
     background-position: right -11em bottom -2em;
@@ -177,13 +173,44 @@ h1 {
     background-position: left -11em top -7em;
   }
 }
+@media(max-width:780px){
+  body::before {
+    width: 80%;
+    background-position: left -15em top -7em;
+  }
+}
+
+/* mobile view */
 @media (max-width: 700px) {
   .reviews,
   .social-proof {
     display: flex;
     flex-direction: column;
   }
+  .ratings{
+    width:100%;
+  }
   #container {
-    height: 100%;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+  }
+  .stars{
+    margin:0.5rem 0;
+    width: 90%;
+
+  }
+  span{
+    font-size: 14px;
+    border: 1px solid ;
+  }
+  .social-proof > section{
+    width: 100%;
+  }
+  .reviews{
+    text-align: center;
+  }
+  .ratings-1{
+    padding: 10% 10% 5% 10%;
   }
 }
