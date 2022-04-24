@@ -98,6 +98,7 @@ h1 {
 .rate-3 {
   margin: 3% 0 0 16%;
 }
+
 /* user reviews... social proof */
 
 .social-proof {
@@ -143,8 +144,9 @@ h1 {
   color: white;
 }
 .feedback {
-  margin-top: 7%;
-  line-height: 1rem;
+  font-size: clamp(0.6625rem, 1.2vw, 0.7875rem);
+  line-height: 1.2rem;
+  margin-top: 1rem;
   font-weight: bolder;
   color: white;
 }
