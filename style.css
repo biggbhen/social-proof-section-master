@@ -48,15 +48,15 @@ body::after {
   display: flex;
 }
 
-.ratings-1 {
-  /* padding-right: 4%; */
-  width: 50%;
+/* .ratings-1 {
+  padding-right: 2%;
   border: 1px solid;
-}
+} */
 .ratings-1 p {
-  /* line-height: clamp(1rem, 1vw, 1.1rem); */
   padding-top: 1.2rem;
-  font-size: clamp(11px, 1vw, 12px);
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  font-weight: 500;
+  color: #b4aab5;
 }
 .ratings {
   /* border: 1px solid orange; */
@@ -67,11 +67,7 @@ h1 {
   line-height: clamp(2rem, 2.8vw, 2.5rem);
   color: #562455;
 }
-p {
-  font-size: clamp(9px, 1vw, 11px);
-  font-weight: 500;
-  color: #b4aab5;
-}
+
 .stars {
   width: 82.5%;
   height: 22%;
@@ -148,10 +144,8 @@ p {
 }
 .feedback {
   margin-top: 7%;
-  line-height: 0.8rem;
-
-  font-weight: 900;
-  font-size: clamp(6px, 1vw, 9.5px);
+  line-height: 1rem;
+  font-weight: bolder;
   color: white;
 }
 .stats > p {
