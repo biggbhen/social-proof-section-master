@@ -34,10 +34,10 @@ body::after {
   background-repeat: no-repeat;
 }
 #container {
-  max-width: 59.375rem;
+  max-width: 64rem;
   width: 100%;
   overflow: auto;
-  margin: 8rem auto 0 auto;
+  margin: 6.5rem auto 0 auto;
   padding: 3.125rem;
   z-index: 4;
   box-shadow: 7px 8px 30px 10px rgba(0, 0, 0, 0.2);
@@ -69,22 +69,25 @@ h1 {
 }
 
 .stars {
+  /* border: 1px solid; */
   width: 82.5%;
-  height: 22%;
+  height: 28%;
   border-radius: 0.3125rem;
   display: flex;
   align-items: center;
-
-  padding-left: 4.5%;
+  padding-left: 4%;
   background-color: #f7f2f6;
-  margin-top: 1rem;
 }
-.star-svg {
-  width: clamp(3%, 0.9vw, 5%);
+/* .stars:hover {
+   transform: scaleX(1.1); 
+  background-color: red;
+} */
+.stars .star-svg {
+  width: clamp(0.9rem, 1.2vw, 1.275rem);
   margin: 0 1%;
 }
 .stars span {
-  font-size: clamp(0.4375rem, 0.9vw, 0.6875rem);
+  font-size: clamp(0.6rem, 1.2vw, 0.8rem);
   margin-left: 1rem;
   font-weight: 900;
   color: #967a93;
@@ -93,10 +96,12 @@ h1 {
   margin: 3% 0 0 8%;
 }
 .rate-3 {
-  margin: 3% 0 0 17%;
+  margin: 3% 0 0 16%;
 }
 /* user reviews... social proof */
+
 .social-proof {
+  padding-top: 2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -104,25 +109,23 @@ h1 {
   /* border: 1px solid green; */
   width: 32.5%;
   height: 75%;
-  margin-top: 1.8%;
   padding: 1rem;
   border-radius: 0.4rem;
   background-color: #511f50;
 }
-.social-proof > section:hover {
+/* .social-proof > section:hover {
   background-color: #51103a;
-}
+} */
 .social-proof .soc-box2 {
   margin-top: 3%;
 }
 .social-proof .soc-box3 {
-  margin-top: 4.4%;
+  margin-top: 6%;
 }
 
 /* user-icon and name */
 .user-icon {
-  width: 1.875rem;
-  height: 1.875rem;
+  width: 2rem;
   border-radius: 50%;
   float: left;
 }
@@ -133,9 +136,8 @@ h1 {
 }
 .stats {
   width: 50%;
-  /* border: 1px solid purple; */
+  border: 1px solid purple;
   margin-left: 20%;
-  margin-top: 1.4%;
 }
 .stats > h2 {
   font-size: clamp(9px, 1vw, 11px);
@@ -151,9 +153,7 @@ h1 {
 .stats > p {
   color: #a86199;
 }
-.stars:hover {
-  margin-left: 0;
-}
+
 @media (max-width: 1320px) {
   body::after {
     width: 100%;
@@ -182,7 +182,7 @@ h1 {
     width: 100%;
   }
   #container {
-    width: 80%;
+    width: 100%;
     padding: 0;
     margin: 0;
   }
