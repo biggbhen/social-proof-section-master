@@ -44,14 +44,9 @@ body::after {
 }
 .reviews,
 .social-proof {
-  /* border: 1px solid grey; */
   display: flex;
 }
 
-/* .ratings-1 {
-  padding-right: 2%;
-  border: 1px solid;
-} */
 .ratings-1 p {
   padding-top: 1.2rem;
   font-size: clamp(0.9rem, 1.5vw, 1.2rem);
@@ -77,11 +72,9 @@ h1 {
   align-items: center;
   padding-left: 4%;
   background-color: #f7f2f6;
+  transition: all 0.6s ease-out;
 }
-/* .stars:hover {
-   transform: scaleX(1.1); 
-  background-color: red;
-} */
+
 .stars .star-svg {
   width: clamp(0.9rem, 1.2vw, 1.275rem);
   margin: 0 1%;
@@ -114,9 +107,7 @@ h1 {
   border-radius: 0.4rem;
   background-color: #511f50;
 }
-/* .social-proof > section:hover {
-  background-color: #51103a;
-} */
+
 .social-proof .soc-box2 {
   margin-top: 3%;
 }
