@@ -165,6 +165,17 @@ h1 {
 
 /* mobile view */
 @media (max-width: 700px) {
+  /* fonts */
+  .ratings-1 p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+  }
+  /* .stats > h2 {
+    font-size: clamp(0.7625rem, 1.2vw, 0.8875rem);
+  }
+  .feedback {
+    font-size: clamp(0.6625rem, 1svw, 0.7875rem);
+  } */
+
   .reviews,
   .social-proof {
     display: flex;
@@ -174,20 +185,38 @@ h1 {
     width: 100%;
   }
   #container {
-    width: 100%;
+    width: 90%;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
   }
   .stars {
-    margin: 0.5rem 0;
+    margin: 0.7rem auto;
     width: 90%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  span {
-    font-size: 14px;
-    border: 1px solid;
+  .stars .star-svg {
+    width: clamp(0.9rem, 1.2vw, 1.275rem);
+    margin: 0 1%;
   }
+  .stars span {
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    margin-left: 1rem;
+    font-weight: 800;
+    color: #967a93;
+  }
+  .rate-2 {
+    margin: 0.7rem auto;
+  }
+  .rate-3 {
+    margin: 0.7rem auto;
+  }
+
   .social-proof > section {
-    width: 100%;
+    width: 90%;
+    margin: 0.5rem auto;
   }
   .reviews {
     text-align: center;
