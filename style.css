@@ -19,6 +19,7 @@ body::before {
   background-position: left -9em top -4em;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: -100;
 }
 body::after {
   content: '';
@@ -27,11 +28,12 @@ body::after {
   height: 100%;
   right: 0%;
   bottom: 0%;
-  /* border: 1px solid #511F50; */
+  /* border: 1px solid #511f50; */
   background-position: right -4em bottom -2em;
   background-image: url('./images/bg-pattern-bottom-desktop.svg');
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: -100;
 }
 #container {
   max-width: 64rem;
@@ -68,11 +70,16 @@ h1 {
   width: 82.5%;
   height: 28%;
   border-radius: 0.3125rem;
+  z-index: 100;
   display: flex;
   align-items: center;
   padding-left: 4%;
   background-color: #f7f2f6;
   transition: all 0.6s ease-out;
+}
+.stars:hover {
+  transform: scaleX(1.2);
+  box-shadow: 3px 4px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
 .stars .star-svg {
@@ -159,7 +166,7 @@ h1 {
 @media (max-width: 780px) {
   body::before {
     width: 80%;
-    background-position: left -15em top -7em;
+    background-position: left -20rem top -7rem;
   }
 }
 
@@ -167,14 +174,14 @@ h1 {
 @media (max-width: 700px) {
   /* fonts */
   .ratings-1 p {
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
   }
-  /* .stats > h2 {
-    font-size: clamp(0.7625rem, 1.2vw, 0.8875rem);
+  .stats > h2 {
+    font-size: clamp(0.8625rem, 1.5vw, 0.9875rem);
   }
   .feedback {
-    font-size: clamp(0.6625rem, 1svw, 0.7875rem);
-  } */
+    font-size: clamp(0.7625rem, 1.5vw, 0.8875rem);
+  }
 
   .reviews,
   .social-proof {
@@ -202,7 +209,7 @@ h1 {
     margin: 0 1%;
   }
   .stars span {
-    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
     margin-left: 1rem;
     font-weight: 800;
     color: #967a93;
@@ -223,5 +230,8 @@ h1 {
   }
   .ratings-1 {
     padding: 10% 10% 5% 10%;
+  }
+  .stars:hover {
+    transform: scaleX(0.9);
   }
 }
